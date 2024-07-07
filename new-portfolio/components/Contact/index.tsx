@@ -1,0 +1,47 @@
+import React from "react";
+
+const Contact: React.FC = () => {
+  return (
+    <div className="text-white py-10 w-full">
+      <div className="container mx-auto px-4">
+        <div>
+          <h2 className="text-xl tracking-widest mb-8 text-left">CONTACT</h2>
+        </div>
+        <div className="w-full flex flex-col gap-4 md:gap-6 lg:flex-row lg:gap-8">
+          <a
+            href="mailto:your-email@example.com"
+            className="flex items-center justify-center border border-gray-500 text-gray-300 hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
+          >
+            <span>Send an email</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/your-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center border border-gray-500 text-gray-300 hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
+          >
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://www.upwork.com/freelancers/your-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center border border-gray-500 text-gray-300 hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
+          >
+            <span>Upwork</span>
+          </a>
+          <a
+            href="https://github.com/your-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center border border-gray-500 text-gray-300 hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
+          >
+            <span>Github</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
