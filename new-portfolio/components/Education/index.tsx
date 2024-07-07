@@ -24,7 +24,7 @@ const educationData: EducationItem[] = [
 
 const Education: React.FC = () => {
   return (
-    <div className="text-white py-10 w-full">
+    <div className="text-black dark:text-white py-10 w-full bg-white dark:bg-black">
       <div className="container mx-auto px-4">
         <h2 className="text-xl tracking-widest mb-8 text-left md:text-left">EDUCATION</h2>
         <div className="w-full">
@@ -34,9 +34,9 @@ const Education: React.FC = () => {
                 <div className="flex flex-col mb-4 md:mb-0">
                   <h3 className="text-lg md:text-xl">{item.institution}</h3>
                   <p className="text-blue-400">{item.location}</p>
-                  <p className="text-gray-400">{item.degree}</p>
+                  <p className="text-gray-600 dark:text-gray-400">{item.degree}</p>
                 </div>
-                <div className="text-gray-400 md:text-right">{item.period}</div>
+                <div className="text-gray-600 dark:text-gray-400 md:text-right">{item.period}</div>
               </div>
             </div>
           ))}

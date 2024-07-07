@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact: React.FC = () => {
   return (
-    <div className="text-white py-10 w-full">
+    <div className="text-black dark:text-white py-10 w-full bg-white dark:bg-black">
       <div className="container mx-auto px-4">
         <div>
           <h2 className="text-xl tracking-widest mb-8 text-left">CONTACT</h2>
@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
         <div className="w-full flex flex-col gap-4 md:gap-6 lg:flex-row lg:gap-8">
           <a
             href="mailto:your-email@example.com"
-            className="flex items-center justify-center border border-gray-500 text-gray-300 hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
+            className="flex items-center justify-center border border-gray-500 text-gray-800 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
           >
             <span>Send an email</span>
           </a>
@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
             href="https://www.linkedin.com/in/your-profile"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center border border-gray-500 text-gray-300 hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
+            className="flex items-center justify-center border border-gray-500 text-gray-800 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
           >
             <span>LinkedIn</span>
           </a>
@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
             href="https://www.upwork.com/freelancers/your-profile"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center border border-gray-500 text-gray-300 hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
+            className="flex items-center justify-center border border-gray-500 text-gray-800 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
           >
             <span>Upwork</span>
           </a>
@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
             href="https://github.com/your-profile"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center border border-gray-500 text-gray-300 hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
+            className="flex items-center justify-center border border-gray-500 text-gray-800 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
           >
             <span>Github</span>
           </a>
