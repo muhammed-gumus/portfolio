@@ -9,13 +9,13 @@ const Contact: React.FC = () => {
         </div>
         <div className="w-full flex flex-col gap-4 md:gap-6 lg:flex-row lg:gap-8">
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:mgumus4102@gmail.com"
             className="flex items-center justify-center border border-gray-500 text-gray-800 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
           >
             <span>Send an email</span>
           </a>
           <a
-            href="https://www.linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/muhammedgums/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center border border-gray-500 text-gray-800 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
@@ -23,15 +23,15 @@ const Contact: React.FC = () => {
             <span>LinkedIn</span>
           </a>
           <a
-            href="https://www.upwork.com/freelancers/your-profile"
+            href="https://medium.com/@devmamidev"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center border border-gray-500 text-gray-800 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"
           >
-            <span>Upwork</span>
+            <span>Medium</span>
           </a>
           <a
-            href="https://github.com/your-profile"
+            href="https://github.com/muhammed-gumus"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center border border-gray-500 text-gray-800 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg px-4 py-2 w-full lg:w-64"

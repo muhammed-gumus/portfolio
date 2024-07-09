@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Home() {
@@ -40,17 +41,19 @@ export default function Home() {
           interested in music.
         </p>
         <div className="flex items-center justify-center md:justify-start">
-          <button
-            className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white px-6 py-2 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-110 focus:outline-none"
-            onClick={handleWave}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            Say hi{' '}
-            <span className={`wave ${isWaving ? 'wave-active' : ''} text-xl`}>
-              👋
-            </span>
-          </button>
+          <Link href={"mailto:mgumus4102@gmail.com"}>
+            <button
+              className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white px-6 py-2 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-110 focus:outline-none"
+              onClick={handleWave}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              Say hi{" "}
+              <span className={`wave ${isWaving ? "wave-active" : ""} text-xl`}>
+                👋
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

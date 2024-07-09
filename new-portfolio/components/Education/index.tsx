@@ -9,16 +9,10 @@ type EducationItem = {
 
 const educationData: EducationItem[] = [
   {
-    institution: "University of Toronto",
-    location: "Canada",
-    degree: "Bachelor's degree in communication",
-    period: "2018 / 2021",
-  },
-  {
-    institution: "ETM Ibn Rochd - H2IT",
-    location: "Canada",
-    degree: "Certified Fullstack Web Developer",
-    period: "2018 / 2021",
+    institution: "Konya Technical University",
+    location: "Turkey",
+    degree: "Bachelor's degree",
+    period: "2020 / 2024",
   },
 ];
 

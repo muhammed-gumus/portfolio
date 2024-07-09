@@ -7,11 +7,14 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   const handleThemeToggle = () => {
-    setDarkMode(!darkMode);
-    if (darkMode) {
-      document.documentElement.classList.remove("dark");
-    } else {
+    const newMode = !darkMode;
+    setDarkMode(newMode);
+    if (newMode) {
       document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
   };
 
@@ -31,11 +34,13 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    // Sayfa yüklendiğinde mevcut temayı kontrol edin ve durumu belirleyin
-    if (document.documentElement.classList.contains("dark")) {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
       setDarkMode(true);
+      document.documentElement.classList.add("dark");
     } else {
       setDarkMode(false);
+      document.documentElement.classList.remove("dark");
     }
   }, []);
 
