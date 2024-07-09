@@ -16,7 +16,7 @@ const projects: Project[] = [
     description:
       "With Nomad Work, discover and evaluate the best workplaces and make your choice with artificial intelligence-supported ratings. Liberate your work style!",
     image:
-      "https://private-user-images.githubusercontent.com/86381278/294758268-0b801181-ad81-4622-ade8-71c7e00d4530.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA1MjQwODIsIm5iZiI6MTcyMDUyMzc4MiwicGF0aCI6Ii84NjM4MTI3OC8yOTQ3NTgyNjgtMGI4MDExODEtYWQ4MS00NjIyLWFkZTgtNzFjN2UwMGQ0NTMwLmpwZWc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwOVQxMTE2MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05OWY4ZTYyNzlhMDYyYzY1ZTkwMjY4M2IzMmY0ZDQxZmJmMmRjMzA4ZDFiOWQ0Yjc4YjQyMDQyNmE1MGI2NTcyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.GjLPX-SEviF-nvUE-YnJniFpNGw9QN_gUyzdou97GQU",
+      "/image/nomad.jpeg",
     technologies: [
       "TypeScript",
       "Next.js",
@@ -34,7 +34,7 @@ const projects: Project[] = [
     description:
       "A sweet javascript bot that offers pull requests from the repository you want in the date range you want as a markdowon file.",
     image:
-      "https://private-user-images.githubusercontent.com/86381278/263409325-a6850e23-9d5f-40ea-891a-27afb1850bda.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA1MjUxMjUsIm5iZiI6MTcyMDUyNDgyNSwicGF0aCI6Ii84NjM4MTI3OC8yNjM0MDkzMjUtYTY4NTBlMjMtOWQ1Zi00MGVhLTg5MWEtMjdhZmIxODUwYmRhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzA5VDExMzM0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE4NmU3YzQ5OTFiNjA1Y2FkYzEyNDIyMjgyODBkZjQyZmVhYTg4NGVlM2RlNWUxMjc0YzI2YWNlZGJmODQwYzEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.m2OmfogGv_JdhF6g0YZriFZADnaGHwpGf3BsE4Ojtn8",
+      "/image/mergeBot.png",
     technologies: ["Javacript", "Node.js", "GitHub Api"],
     githubLink: "https://github.com/muhammed-gumus/nomad-work",
     externalLink: "",
@@ -44,7 +44,7 @@ const projects: Project[] = [
     description:
       "Listedfy enables users to create collaborative playlists, discover new songs, and access detailed information and statistics about songs, artists, albums, and playlists. It leverages Spotify API and Airtable for data management, with a user-friendly interface built using Tailwind CSS and Next.js.",
     image:
-      "https://private-user-images.githubusercontent.com/86381278/346943198-79562140-a755-48eb-b8b8-39ece4815a49.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA1MjU5MzcsIm5iZiI6MTcyMDUyNTYzNywicGF0aCI6Ii84NjM4MTI3OC8zNDY5NDMxOTgtNzk1NjIxNDAtYTc1NS00OGViLWI4YjgtMzllY2U0ODE1YTQ5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzA5VDExNDcxN17JlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lN2NmMmNhNzY2N2VlY2U3N2U2Njk5ZGI3ZmEwMjQ0MDdiZDFmMDA3ZmU0OTQzNDJlMjUzZDgyNjliZTU4MDc4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.LtEFAz17rcQ7dMER7uDWBU0Xm4Gn1AKGQPVz32aqvRE",
+      "/image/listedfy.png",
     technologies: [
       "Javacript",
       "Next.js",
@@ -59,7 +59,7 @@ const projects: Project[] = [
     name: "Senchabot",
     description:
       "I contributed to Senchabot, a comprehensive chatbot project designed to enhance user interactions and automate tasks. My contributions focused on improving the web interface.",
-    image: "https://senchabot.app/images/dashboard-dark.png",
+    image: "/image/sencha.png",
     technologies: [
       "Javacript",
       "Next.js",
@@ -75,7 +75,7 @@ const projects: Project[] = [
     description:
       "I created a sleek and modern website design using HTML and CSS, hosted at Silver Host. The website features a clean layout with intuitive navigation, showcasing my skills in front-end development. It demonstrates a strong focus on responsive design and user experience.",
     image:
-      "https://private-user-images.githubusercontent.com/86381278/346994172-f8ae75b4-0d05-42f7-9c6a-6799619630f1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA1MzUwMDAsIm5iZiI6MTcyMDUzNDcwMCwicGF0aCI6Ii84NjM4MTI3OC8zNDY5OTQxNzItZjhhZTc1YjQtMGQwNS00MmY3LTljNmEtNjc5OTYxOTYzMGYxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzA5VDE0MTgyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ3OTk2N2E4YTMyOGY1ZTdiYmMzNDcyNjc4YTg1Njc4OTA0Y2U1YzM5NzIzYjI4MmMzYjUyNmM1ODBhODk0OTYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.aU0yJevdkc8ylNeB01vmAEq14Y5R0tBQ-uKmroWxLVg",
+      "/image/host.png",
     technologies: ["Html", "CSS"],
     githubLink: "https://github.com/muhammed-gumus/Silver-Host",
     externalLink: "https://silver-host.vercel.app/",
@@ -85,7 +85,7 @@ const projects: Project[] = [
     description:
       "The Personal Portfolio website is a comprehensive showcase of my work as a developer. It features sections for my biography, skills, projects, and contact information. The design is modern and responsive, ensuring a great user experience on all devices.",
     image:
-      "https://private-user-images.githubusercontent.com/86381278/346998284-527a3ab3-1626-4249-b6f1-a36da6685087.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA1MzU3MTAsIm5iZiI6MTcyMDUzNTQxMCwicGF0aCI6Ii84NjM4MTI3OC8zNDY5OTgyODQtNTI3YTNhYjMtMTYyNi00MjQ5LWI2ZjEtYTM2ZGE2Njg1MDg3LnBuZz9YLUFzei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFzei1EYXRlPTIwMjQwNzA5VDE0MzAxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNiNGU5MDY1NDUyYTg5YWZmODAxZmVmMTNlYTVlY2IzODNlZmM0OTQ5ODNmNzk1Yzk3MTU4ZjNjZTBiY2RhNmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.XSTt4lApL5NOyxCV6OPMzpKpqgN4OOOBID99J5dV1nI",
+      "/image/portfolio.png",
     technologies: ["Next.js", "JavaScript", "CSS", "React.js"],
     githubLink: "https://github.com/muhammed-gumus/Personal-Portfolio",
     externalLink: "https://personal-portfolio-muhammed-gumus.vercel.app/",
