@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"; // Import the Image component
 
 type Project = {
   name: string;
@@ -43,7 +44,7 @@ const projects: Project[] = [
     description:
       "Listedfy enables users to create collaborative playlists, discover new songs, and access detailed information and statistics about songs, artists, albums, and playlists. It leverages Spotify API and Airtable for data management, with a user-friendly interface built using Tailwind CSS and Next.js.",
     image:
-      "https://private-user-images.githubusercontent.com/86381278/346943198-79562140-a755-48eb-b8b8-39ece4815a49.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA1MjU5MzcsIm5iZiI6MTcyMDUyNTYzNywicGF0aCI6Ii84NjM4MTI3OC8zNDY5NDMxOTgtNzk1NjIxNDAtYTc1NS00OGViLWI4YjgtMzllY2U0ODE1YTQ5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzA5VDExNDcxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU3Y2YyY2E3NjY3ZWVjZTc3ZTY2OTlkYjdmYTAyNDQwN2JkMWYwMDdmZTQ5NDM0MmUyNTNkODI2OWJlNTgwNzgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.LtEFAz17rcQ7dMER7uDWBU0Xm4Gn1AKGQPVz32aqvRE",
+      "https://private-user-images.githubusercontent.com/86381278/346943198-79562140-a755-48eb-b8b8-39ece4815a49.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA1MjU5MzcsIm5iZiI6MTcyMDUyNTYzNywicGF0aCI6Ii84NjM4MTI3OC8zNDY5NDMxOTgtNzk1NjIxNDAtYTc1NS00OGViLWI4YjgtMzllY2U0ODE1YTQ5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzA5VDExNDcxN17JlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lN2NmMmNhNzY2N2VlY2U3N2U2Njk5ZGI3ZmEwMjQ0MDdiZDFmMDA3ZmU0OTQzNDJlMjUzZDgyNjliZTU4MDc4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.LtEFAz17rcQ7dMER7uDWBU0Xm4Gn1AKGQPVz32aqvRE",
     technologies: [
       "Javacript",
       "Next.js",
@@ -84,7 +85,7 @@ const projects: Project[] = [
     description:
       "The Personal Portfolio website is a comprehensive showcase of my work as a developer. It features sections for my biography, skills, projects, and contact information. The design is modern and responsive, ensuring a great user experience on all devices.",
     image:
-      "https://private-user-images.githubusercontent.com/86381278/346998284-527a3ab3-1626-4249-b6f1-a36da6685087.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA1MzU3MTAsIm5iZiI6MTcyMDUzNTQxMCwicGF0aCI6Ii84NjM4MTI3OC8zNDY5OTgyODQtNTI3YTNhYjMtMTYyNi00MjQ5LWI2ZjEtYTM2ZGE2Njg1MDg3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzA5VDE0MzAxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNiNGU5MDY1NDUyYTg5YWZmODAxZmVmMTNlYTVlY2IzODNlZmM0OTQ5ODNmNzk1Yzk3MTU4ZjNjZTBiY2RhNmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.XSTt4lApL5NOyxCV6OPMzpKpqgN4OOOBID99J5dV1nI",
+      "https://private-user-images.githubusercontent.com/86381278/346998284-527a3ab3-1626-4249-b6f1-a36da6685087.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA1MzU3MTAsIm5iZiI6MTcyMDUzNTQxMCwicGF0aCI6Ii84NjM4MTI3OC8zNDY5OTgyODQtNTI3YTNhYjMtMTYyNi00MjQ5LWI2ZjEtYTM2ZGE2Njg1MDg3LnBuZz9YLUFzei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFzei1EYXRlPTIwMjQwNzA5VDE0MzAxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNiNGU5MDY1NDUyYTg5YWZmODAxZmVmMTNlYTVlY2IzODNlZmM0OTQ5ODNmNzk1Yzk3MTU4ZjNjZTBiY2RhNmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.XSTt4lApL5NOyxCV6OPMzpKpqgN4OOOBID99J5dV1nI",
     technologies: ["Next.js", "JavaScript", "CSS", "React.js"],
     githubLink: "https://github.com/muhammed-gumus/Personal-Portfolio",
     externalLink: "https://personal-portfolio-muhammed-gumus.vercel.app/",
@@ -102,10 +103,12 @@ const Projects: React.FC = () => {
               key={index}
               className="rounded-sm overflow-hidden shadow-lg group dark:bg-gray-950"
             >
-              <img
+              <Image
                 src={project.image}
                 alt={project.name}
                 className="w-full h-60 object-cover"
+                width={640} // Add width and height
+                height={360}
               />
               <div className="py-4 px-4">
                 <div className="flex justify-between items-center mb-2">

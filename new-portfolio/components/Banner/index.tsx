@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div className="flex w-full items-center justify-center md:justify-start mt-24 bg-white dark:bg-black text-black dark:text-white px-4 md:px-8">
       <div className="text-center md:text-left w-full">
-        <h1 className="text-md md:text-lg mb-4 opacity-80">Hey, I'm</h1>
+        <h1 className="text-md md:text-lg mb-4 opacity-80">Hey, I&#39;m</h1>
         <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-violet-800 via-sky-500 to-pink-400 inline-block text-transparent bg-clip-text mb-8">
           Muhammed Gümüş
         </h1>

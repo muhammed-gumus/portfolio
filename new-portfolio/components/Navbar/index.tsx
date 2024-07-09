@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image"; // Import the Image component
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(true);
@@ -58,10 +59,12 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex justify-between items-center px-4">
         <Link href="/">
-          <img
+          <Image
             src="/logo.png"
             alt="MG Logo"
             className="h-10 w-auto rounded-full"
+            width={40} // Add width and height
+            height={40}
           />
         </Link>
         <div className="flex flex-row gap-8 items-center">
