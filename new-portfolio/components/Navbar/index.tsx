@@ -69,11 +69,17 @@ export default function Navbar() {
         </Link>
         <div className="flex flex-row gap-8 items-center">
           <a
-            href="/MuhammedGumusResume.pdf"
+            href="/ResumeMuhammedGumus.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={`lg ${
-              scrolled && darkMode ? "text-black" : scrolled ? "text-white" : darkMode ? "text-white" : "text-black"
+              scrolled && darkMode
+                ? "text-black"
+                : scrolled
+                ? "text-white"
+                : darkMode
+                ? "text-white"
+                : "text-black"
             }`}
           >
             Resume
