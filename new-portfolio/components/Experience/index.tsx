@@ -4,6 +4,19 @@ import React, { useState, useEffect } from "react";
 
 const experiences = [
   {
+    company: "Büyük Anadolu Hospitals",
+    location: "Kocaeli",
+    role: "Software Developer",
+    startDate: "Sep 2024",
+    endDate: "Present",
+    description: [
+      "Led the development of web projects using React.js, Next.js, Node.js, MongoDB, and PHP technologies.",
+      "Managed Git flow, defined code standards, and oversaw merge operations to ensure quality and consistency.",
+      "Developed and presented data-driven reports using the Qlik Sense platform, providing actionable insights to hospital management.",
+      "Made strategic decisions to resolve technical challenges in web projects and implement new technologies.",
+    ],
+  },
+  {
     company: "Architecht",
     location: "Konya",
     role: "Software Developer",
@@ -12,7 +25,7 @@ const experiences = [
     description: [
       "Various screen enhancements and bug fixes were made in the desktop application named BOA and the web application named BOA One, which are used by various participation banks serving in Turkey.",
       "In web development, TypeScript and React.js were used for Frontend, while .Net and SQL were preferred for Backend.",
-      "Various screens were developed using WPF for BOA application."
+      "Various screens were developed using WPF for BOA application.",
     ],
   },
   {
@@ -63,7 +76,9 @@ const ExperienceCard: React.FC<{
   return (
     <div className="mb-8 w-full flex flex-col gap-4 p-6 bg-white dark:bg-black bg-opacity-80 rounded-lg shadow-lg md:bg-transparent md:shadow-none">
       <div className="flex flex-col items-start justify-between">
-        <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">{role}</h2>
+        <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">
+          {role}
+        </h2>
         <h3 className="text-md font-medium text-gray-700 dark:text-gray-300 mb-2">
           {company} - {location}
         </h3>
@@ -83,7 +98,9 @@ const ExperienceCard: React.FC<{
 };
 
 const IndexPage: React.FC = () => {
-  const [selectedCompanyIndex, setSelectedCompanyIndex] = useState<number | null>(null);
+  const [selectedCompanyIndex, setSelectedCompanyIndex] = useState<
+    number | null
+  >(null);
 
   useEffect(() => {
     setSelectedCompanyIndex(0); // İlk şirketi varsayılan olarak seç
@@ -96,7 +113,9 @@ const IndexPage: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row justify-left w-full mt-12 p-4 md:p-8 bg-white dark:bg-black">
       <div className="w-full md:w-1/4 md:pr-8 md:border-r border-gray-700">
-        <h1 className="text-xl tracking-widest mb-4 text-left md:text-left md:text-white">EXPERIENCE</h1>
+        <h1 className="text-xl tracking-widest mb-4 text-left md:text-left md:text-white">
+          EXPERIENCE
+        </h1>
         <div className="flex overflow-x-auto md:flex-col gap-2">
           {experiences.map((experience, index) => (
             <button

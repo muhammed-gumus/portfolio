@@ -69,7 +69,7 @@ export default function Navbar() {
         </Link>
         <div className="flex flex-row gap-8 items-center">
           <a
-            href="/MuhammedGumusResume.pdf"
+            href="/MuhammedGumusResumeCV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={`lg ${
