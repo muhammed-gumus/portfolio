@@ -8,7 +8,7 @@ const experiences = [
     location: "Kocaeli",
     role: "Software Developer",
     startDate: "Sep 2024",
-    endDate: "Present",
+    endDate: "Nov 2024",
     description: [
       "Led the development of web projects using React.js, Next.js, Node.js, MongoDB, and PHP technologies.",
       "Managed Git flow, defined code standards, and oversaw merge operations to ensure quality and consistency.",
