@@ -4,9 +4,22 @@ import React, { useState, useEffect } from "react";
 
 const experiences = [
   {
+    company: "Ayasofyazılım",
+    location: "Kocaeli, Bişim Vadisi",
+    role: "Frontend Engineer",
+    startDate: "Jan 2024",
+    endDate: "Present",
+    description: [
+      "Authentication infrastructure was built using Next.js, TypeScript, and Auth.js, ensuring secure session management and improving user-friendly onboarding processes.",
+      "The user/member relationship was structured to allow individual and corporate accounts to be managed under a single user, enhancing the investment and fundraising experience.",
+      "Integrations with government institutions such as Takasbank, e-Devlet, and MKK were developed, ensuring regulatory compliance and increasing platform reliability.",
+      "Code redundancy in API integrations was eliminated by implementing an Action-based architecture, making the development process more scalable, modular, and efficient.",
+    ],
+  },
+  {
     company: "Büyük Anadolu Hospitals",
     location: "Kocaeli",
-    role: "Software Developer",
+    role: "Computer Engineer",
     startDate: "Sep 2024",
     endDate: "Nov 2024",
     description: [
@@ -19,7 +32,7 @@ const experiences = [
   {
     company: "Architecht",
     location: "Konya",
-    role: "Software Developer",
+    role: "Computer Engineer Intern",
     startDate: "Dec 2023",
     endDate: "Jun 2024",
     description: [

@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://muhammedgumus.com
-
-# Sitemaps
-Sitemap: https://muhammedgumus.com/sitemap.xml
