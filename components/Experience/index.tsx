@@ -124,7 +124,10 @@ const IndexPage: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-left w-full mt-12 p-4 md:p-8 bg-white dark:bg-black">
+    <div
+      id="experience"
+      className="flex flex-col md:flex-row justify-left w-full mt-12 p-4 md:p-8 bg-white dark:bg-black"
+    >
       <div className="w-full md:w-1/4 md:pr-8 md:border-r border-gray-700">
         <h1 className="text-xl tracking-widest mb-4 text-left md:text-left md:text-white">
           EXPERIENCE

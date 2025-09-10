@@ -2,7 +2,10 @@ import React from "react";
 
 const Contact: React.FC = () => {
   return (
-    <div className="text-black dark:text-white py-10 w-full bg-white dark:bg-black">
+    <div
+      id="contact"
+      className="text-black dark:text-white py-10 w-full bg-white dark:bg-black"
+    >
       <div className="container mx-auto px-4">
         <div>
           <h2 className="text-xl tracking-widest mb-8 text-left">CONTACT</h2>
