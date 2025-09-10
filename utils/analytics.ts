@@ -29,6 +29,7 @@ export const trackEvent = (event: GAEvent) => {
  * Track resume download specifically
  */
 export const trackResumeDownload = () => {
+  // Send custom resume event
   trackEvent({
     action: 'resume',
     category: 'engagement',
@@ -39,9 +40,22 @@ export const trackResumeDownload = () => {
       file_extension: 'pdf',
       link_text: 'Resume',
       description: 'Frontend Developer Resume Download',
-      action_type: 'download'
+      action_type: 'download',
+      page_location: window.location.href
     },
   });
+
+  // Also trigger a page_view event with resume context for GA4 conversion tracking
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'page_view', {
+      page_title: 'Resume Download',
+      page_location: window.location.href,
+      custom_parameters: {
+        resume_download: true,
+        file_type: 'pdf'
+      }
+    });
+  }
 };
 
 /**
