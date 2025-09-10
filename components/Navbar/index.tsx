@@ -81,9 +81,18 @@ export default function Navbar() {
                 ? "text-white"
                 : "text-black"
             }`}
+            onClick={() => {
+              if (typeof window.gtag !== "undefined") {
+                window.gtag("event", "resume_click", {
+                  event_category: "engagement",
+                  event_label: "Resume Link",
+                });
+              }
+            }}
           >
             Resume
           </a>
+
           <button onClick={handleThemeToggle}>
             {darkMode ? (
               scrolled ? (
