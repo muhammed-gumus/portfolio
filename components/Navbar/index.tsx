@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image"; // Import the Image component
+import { trackResumeDownload, trackThemeChange } from "@/utils/analytics";
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(true);
@@ -13,9 +14,11 @@ export default function Navbar() {
     if (newMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
+      trackThemeChange("dark");
     } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
+      trackThemeChange("light");
     }
   };
 
@@ -82,12 +85,7 @@ export default function Navbar() {
                 : "text-black"
             }`}
             onClick={() => {
-              if (typeof window.gtag !== "undefined") {
-                window.gtag("event", "resume_click", {
-                  event_category: "engagement",
-                  event_label: "Resume Link",
-                });
-              }
+              trackResumeDownload();
             }}
           >
             Resume

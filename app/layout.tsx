@@ -28,7 +28,12 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-CJW3FRSEG1');
+              gtag('config', 'G-CJW3FRSEG1', {
+                page_title: 'Muhammed Gümüş Portfolio',
+                custom_map: {'custom_parameter': 'custom_value'},
+                send_page_view: true,
+                allow_enhanced_conversions: true
+              });
             `,
           }}
         />
