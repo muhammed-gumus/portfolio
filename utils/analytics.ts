@@ -15,8 +15,8 @@ export interface GAEvent {
  * Send a custom event to Google Analytics
  */
 export const trackEvent = (event: GAEvent) => {
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', event.action, {
+  if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", event.action, {
       event_category: event.category,
       event_label: event.label,
       value: event.value,
@@ -31,29 +31,29 @@ export const trackEvent = (event: GAEvent) => {
 export const trackResumeDownload = () => {
   // Send custom resume event
   trackEvent({
-    action: 'resume',
-    category: 'engagement',
-    label: 'Resume PDF Download',
+    action: "resume",
+    category: "engagement",
+    label: "Resume PDF Download",
     value: 1,
     custom_parameters: {
-      file_name: 'Resume-FrontendMG.pdf',
-      file_extension: 'pdf',
-      link_text: 'Resume',
-      description: 'Frontend Developer Resume Download',
-      action_type: 'download',
-      page_location: window.location.href
+      file_name: "Resume-FrontendMG.pdf",
+      file_extension: "pdf",
+      link_text: "Resume",
+      description: "Frontend Developer Resume Download",
+      action_type: "download",
+      page_location: window.location.href,
     },
   });
 
   // Also trigger a page_view event with resume context for GA4 conversion tracking
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', 'page_view', {
-      page_title: 'Resume Download',
+  if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", "page_view", {
+      page_title: "Resume Download",
       page_location: window.location.href,
       custom_parameters: {
         resume_download: true,
-        file_type: 'pdf'
-      }
+        file_type: "pdf",
+      },
     });
   }
 };
@@ -63,8 +63,8 @@ export const trackResumeDownload = () => {
  */
 export const trackProjectClick = (projectName: string, projectUrl?: string) => {
   trackEvent({
-    action: 'project_click',
-    category: 'portfolio',
+    action: "project_click",
+    category: "portfolio",
     label: projectName,
     custom_parameters: {
       project_name: projectName,
@@ -76,10 +76,12 @@ export const trackProjectClick = (projectName: string, projectUrl?: string) => {
 /**
  * Track contact form interactions
  */
-export const trackContactAction = (action: 'view' | 'submit' | 'email_click') => {
+export const trackContactAction = (
+  action: "view" | "submit" | "email_click"
+) => {
   trackEvent({
     action: `contact_${action}`,
-    category: 'contact',
+    category: "contact",
     label: action.charAt(0).toUpperCase() + action.slice(1),
   });
 };
@@ -89,8 +91,8 @@ export const trackContactAction = (action: 'view' | 'submit' | 'email_click') =>
  */
 export const trackNavigation = (section: string) => {
   trackEvent({
-    action: 'navigation',
-    category: 'user_engagement',
+    action: "navigation",
+    category: "user_engagement",
     label: section,
     custom_parameters: {
       section_name: section,
@@ -103,8 +105,8 @@ export const trackNavigation = (section: string) => {
  */
 export const trackScrollDepth = (percentage: number) => {
   trackEvent({
-    action: 'scroll_depth',
-    category: 'engagement',
+    action: "scroll_depth",
+    category: "engagement",
     label: `${percentage}%`,
     value: percentage,
   });
@@ -113,10 +115,10 @@ export const trackScrollDepth = (percentage: number) => {
 /**
  * Track theme changes
  */
-export const trackThemeChange = (theme: 'dark' | 'light') => {
+export const trackThemeChange = (theme: "dark" | "light") => {
   trackEvent({
-    action: 'theme_change',
-    category: 'user_preference',
+    action: "theme_change",
+    category: "user_preference",
     label: theme,
     custom_parameters: {
       theme_selected: theme,
