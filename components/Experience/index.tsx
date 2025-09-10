@@ -10,10 +10,12 @@ const experiences = [
     startDate: "Jan 2024",
     endDate: "Present",
     description: [
-      "Authentication infrastructure was built using Next.js, TypeScript, and Auth.js, ensuring secure session management and improving user-friendly onboarding processes.",
-      "The user/member relationship was structured to allow individual and corporate accounts to be managed under a single user, enhancing the investment and fundraising experience.",
-      "Integrations with government institutions such as Takasbank, e-Devlet, and MKK were developed, ensuring regulatory compliance and increasing platform reliability.",
-      "Code redundancy in API integrations was eliminated by implementing an Action-based architecture, making the development process more scalable, modular, and efficient.",
+      "Took major responsibility in developing the frontend of UpWithCrowd, a crowdfunding platform, using TypeScript, Next.js, Tailwind, and ShadCN/UI; contributed extensively to both the user-facing platform and the admin panel.",
+      "Contributed to Unirefund, a tax-free platform, by fixing bugs, solving UX issues, and enhancing admin and store interfaces.",
+      "Implemented a secure identity verification flow in Unirefund’s end-user web platform, including liveness test, passport scan, and NFC validation.",
+      "Developed the landing website of Unirefund using Strapi for promotional and informational purposes.",
+      "Co-developed the Unirefund Android POS application with Expo/React Native, implementing invoicing, passport/NFC scanning, and integrations with thermal printers, laser printers, and POS device inner printers.",
+      "Built a mobile UI component library to provide reusable UI elements and modules (UI components, printing, NFC, passport scanning) for fast integration across mobile applications.",
     ],
   },
   {
