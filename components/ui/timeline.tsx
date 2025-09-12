@@ -36,10 +36,7 @@ const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div
-      className="w-full bg-white dark:bg-neutral-950 font-sans"
-      ref={containerRef}
-    >
+    <div className="w-full font-sans" ref={containerRef}>
       <div className="max-w-9xl mx-auto py-10 px-4 md:px-8 lg:px-10 flex items-center justify-center">
         <Heading
           title="CHANGELOG FROM MY JOURNEY"

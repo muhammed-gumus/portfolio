@@ -114,7 +114,7 @@ const Contact: React.FC = () => {
         <div className="flex flex-col md:flex-row items-stretch ">
           {/* Left Side - Contact Form */}
           <div className="flex flex-col w-full md:w-1/2 lg:w-1/2 px-4 md:px-8 py-8">
-            <h2 className="text-3xl font-bold flex justify-center w-full mb-6">
+            <h2 className="text-xl md:text-3xl font-bold flex justify-center w-full mb-6">
               Let's Contact!
             </h2>
             <form className="space-y-4" onSubmit={handleSubmit}>
