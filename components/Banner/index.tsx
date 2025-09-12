@@ -102,7 +102,7 @@ export default function Home() {
               alt="Muhammed Gümüş"
               width={288}
               height={288}
-              className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+              className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
               priority
             />
           </div>

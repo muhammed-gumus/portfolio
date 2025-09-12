@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image"; // Import the Image component
 import { trackResumeDownload, trackThemeChange } from "@/utils/analytics";
@@ -8,6 +8,7 @@ export default function Navbar() {
   const [darkMode, setDarkMode] = useState(true);
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const closeButtonRef = useRef<HTMLButtonElement | null>(null);
 
   const handleThemeToggle = () => {
     const newMode = !darkMode;
@@ -66,6 +67,28 @@ export default function Navbar() {
     }
   }, []);
 
+  // Modal behavior for mobile menu: lock background scroll, focus close button, close on Escape
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      // lock background scroll
+      const prevOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+
+      // focus the close button for keyboard users
+      setTimeout(() => closeButtonRef.current?.focus(), 50);
+
+      const onKey = (e: KeyboardEvent) => {
+        if (e.key === "Escape") setMobileMenuOpen(false);
+      };
+      window.addEventListener("keydown", onKey);
+
+      return () => {
+        document.body.style.overflow = prevOverflow || "";
+        window.removeEventListener("keydown", onKey);
+      };
+    }
+  }, [mobileMenuOpen]);
+
   return (
     <>
       <nav
@@ -81,8 +104,8 @@ export default function Navbar() {
               ? "bg-white/10 backdrop-blur-md text-white shadow-lg shadow-black/10"
               : "bg-black/20 backdrop-blur-lg text-black shadow-lg shadow-white/10"
             : darkMode
-            ? "bg-transparent text-white"
-            : "bg-transparent text-black"
+              ? "bg-transparent text-white"
+              : "bg-transparent text-black"
         }`}
       >
         <div className="w-full flex justify-between items-center px-3 sm:px-6">
@@ -106,8 +129,8 @@ export default function Navbar() {
                     ? "text-white hover:bg-white/10"
                     : "text-black hover:bg-black/10"
                   : darkMode
-                  ? "text-white hover:bg-white/10"
-                  : "text-black hover:bg-black/10"
+                    ? "text-white hover:bg-white/10"
+                    : "text-black hover:bg-black/10"
               }`}
             >
               Experience
@@ -120,8 +143,8 @@ export default function Navbar() {
                     ? "text-white hover:bg-white/10"
                     : "text-black hover:bg-black/10"
                   : darkMode
-                  ? "text-white hover:bg-white/10"
-                  : "text-black hover:bg-black/10"
+                    ? "text-white hover:bg-white/10"
+                    : "text-black hover:bg-black/10"
               }`}
             >
               Projects
@@ -134,8 +157,8 @@ export default function Navbar() {
                     ? "text-white hover:bg-white/10"
                     : "text-black hover:bg-black/10"
                   : darkMode
-                  ? "text-white hover:bg-white/10"
-                  : "text-black hover:bg-black/10"
+                    ? "text-white hover:bg-white/10"
+                    : "text-black hover:bg-black/10"
               }`}
             >
               Education
@@ -148,8 +171,8 @@ export default function Navbar() {
                     ? "text-white hover:bg-white/10"
                     : "text-black hover:bg-black/10"
                   : darkMode
-                  ? "text-white hover:bg-white/10"
-                  : "text-black hover:bg-black/10"
+                    ? "text-white hover:bg-white/10"
+                    : "text-black hover:bg-black/10"
               }`}
             >
               Contact
@@ -168,8 +191,8 @@ export default function Navbar() {
                     ? "text-white border-white/20 hover:bg-white/10"
                     : "text-black border-black/20 hover:bg-black/10"
                   : darkMode
-                  ? "text-white border-white/20 hover:bg-white/10"
-                  : "text-black border-black/20 hover:bg-black/10"
+                    ? "text-white border-white/20 hover:bg-white/10"
+                    : "text-black border-black/20 hover:bg-black/10"
               }`}
               onClick={() => {
                 trackResumeDownload();
@@ -259,8 +282,12 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-white dark:bg-black md:hidden">
-          <div className="flex flex-col h-full">
+        <div
+          role="dialog"
+          aria-modal="true"
+          className="fixed inset-0 z-40 bg-white dark:bg-black md:hidden"
+        >
+          <div className="flex flex-col md:h-full h-90">
             {/* Header with logo and close button */}
             <div className="flex justify-between items-center px-6 py-4 border-b border-gray-200 dark:border-gray-700">
               <Link href="/" onClick={() => setMobileMenuOpen(false)}>
@@ -273,6 +300,8 @@ export default function Navbar() {
                 />
               </Link>
               <button
+                ref={closeButtonRef}
+                aria-label="Close menu"
                 className="p-2 rounded-full"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -292,8 +321,8 @@ export default function Navbar() {
               </button>
             </div>
 
-            {/* Navigation Links */}
-            <div className="flex-1 flex flex-col px-6 py-4">
+            {/* Navigation Links - make this area independently scrollable */}
+            <div className="flex-1 flex flex-col px-6 py-4 overflow-auto">
               <div className="space-y-1">
                 <button
                   onClick={() => scrollToSection("experience")}
