@@ -4,39 +4,27 @@ import Timeline from "../ui/timeline";
 const experienceData = [
   {
     title: "Ayasofyazılım",
-    date: "Jan 2024 - Present",
+    date: "Jan 2025 - Dec 2025",
     subtitle: "Frontend Engineer (Kocaeli, Bilişim Vadisi)",
     content: (
       <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm space-y-4">
         <li>
-          Took major responsibility in developing the frontend of UpWithCrowd, a
-          crowdfunding platform, using TypeScript, Next.js, Tailwind, and
-          ShadCN/UI; contributed extensively to both the user-facing platform
-          and the admin panel.
+          Developed the user interface of the SSR tax-free refund web application using React and TypeScript, optimizing onboarding, transaction flows, and document submission to enhance the overall user experience.
         </li>
         <li>
-          Contributed to Unirefund, a tax-free platform, by fixing bugs, solving
-          UX issues, and enhancing admin and store interfaces.
+          Built the mobile version of the SSR refund application with Expo, enabling store and field staff to perform the same operations seamlessly on mobile; improved workflow speed with QR & barcode scanning and fast invoice processing.
         </li>
         <li>
-          Implemented a secure identity verification flow in Unirefund’s
-          end-user web platform, including liveness test, passport scan, and NFC
-          validation.
+          Integrated advanced identity verification technologies including FaceMatch, Liveness Detection, OCR-MRZ, and NFC Passport Reading, establishing a high-security authentication process to prevent identity fraud attempts.
         </li>
         <li>
-          Developed the landing website of Unirefund using Strapi for
-          promotional and informational purposes.
+          Strengthened security processes by implementing encrypted data handling, offline-capable NFC passport validation, and multi-layered data validation to ensure compliance with international standards.
         </li>
         <li>
-          Co-developed the Unirefund Android POS application with Expo/React
-          Native, implementing invoicing, passport/NFC scanning, and
-          integrations with thermal printers, laser printers, and POS device
-          inner printers.
+         Developed a performance and SEO-optimized corporate landing page using Next.js and Strapi, providing a modular content structure that enabled non-technical teams to manage updates independently.
         </li>
         <li>
-          Built a mobile UI component library to provide reusable UI elements
-          and modules (UI components, printing, NFC, passport scanning) for fast
-          integration across mobile applications.
+         Contributed to admin panel development to improve the efficiency of transaction and identity review workflows, delivering functional UI enhancements that supported core operational teams.
         </li>
       </ul>
     ),

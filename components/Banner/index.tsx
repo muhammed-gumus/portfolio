@@ -113,7 +113,7 @@ export default function Home() {
           <div className="absolute -bottom-4 left-0 sm:bottom-0 sm:-left-5 md:bottom-0 md:-left-5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg sm:rounded-xl px-2 py-1 sm:px-4 sm:py-3 shadow-xl z-20 transform sm:-translate-x-1/2 sm:translate-y-1/2">
             <div className="text-center flex items-center gap-1 sm:gap-2">
               <div className="text-lg sm:text-2xl font-bold text-black dark:text-white mb-0 sm:mb-1">
-                2+
+                3+
               </div>
               <div className="text-xs text-gray-600 dark:text-gray-400 uppercase tracking-wider font-medium">
                 <span className="inline">Years Experience</span>
