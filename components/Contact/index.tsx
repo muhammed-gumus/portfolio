@@ -218,7 +218,7 @@ const Contact: React.FC = () => {
                   href={p.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center gap-2 px-3 py-2 bg-transparent  rounded-full hover:shadow transition text-sm"
+                  className="flex flex-col items-center gap-2 px-3 py-2 bg-transparent  rounded-full text-sm"
                 >
                   <span className="flex-shrink-0">
                     {React.cloneElement(p.icon as React.ReactElement, {
