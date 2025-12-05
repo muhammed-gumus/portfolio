@@ -93,11 +93,11 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed z-50 transition-all duration-500 ease-in-out rounded-full ${
-          mobileMenuOpen ? "md:block hidden" : ""
+          mobileMenuOpen ? "lg:block hidden" : ""
         } ${
           scrolled
-            ? "top-4 left-2 right-2 sm:left-4 sm:right-4 md:left-12 md:right-12 lg:left-16 lg:right-16 py-2 lg:px-8 px-2"
-            : "top-2 left-2 right-2 sm:left-4 sm:right-4 py-3 lg:px-8 px-2"
+            ? "top-4 left-2 right-2 sm:left-4 sm:right-4 md:left-6 md:right-6 lg:left-8 lg:right-8 xl:left-24 xl:right-24 py-2 xl:px-8 px-2"
+            : "top-2 left-2 right-2 sm:left-4 sm:right-4 md:left-6 md:right-6 lg:left-8 lg:right-8 py-3 xl:px-8 px-2"
         } ${
           scrolled
             ? darkMode
@@ -120,67 +120,72 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation Menu - Hidden on mobile */}
-          <div className="hidden md:flex items-center lg:gap-6">
+          <div className="hidden lg:flex items-center gap-1 xl:gap-6">
             <button
               onClick={() => scrollToSection("experience")}
-              className={`font-medium transition-all duration-300 hover:scale-105 px-4 py-2 rounded-full text-sm ${
-                scrolled
-                  ? darkMode
-                    ? "text-white hover:bg-white/10"
-                    : "text-black hover:bg-black/10"
-                  : darkMode
-                    ? "text-white hover:bg-white/10"
-                    : "text-black hover:bg-black/10"
+              className={`font-medium px-4 py-2 text-sm group transition-colors duration-300 ${
+                darkMode ? "text-white" : "text-black"
               }`}
             >
-              Experience
+              <span className="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-current after:transition-transform after:duration-300 group-hover:after:origin-bottom-left group-hover:after:scale-x-100">
+                Experience
+              </span>
             </button>
             <button
               onClick={() => scrollToSection("projects")}
-              className={`font-medium transition-all duration-300 hover:scale-105 px-4 py-2 rounded-full text-sm ${
-                scrolled
-                  ? darkMode
-                    ? "text-white hover:bg-white/10"
-                    : "text-black hover:bg-black/10"
-                  : darkMode
-                    ? "text-white hover:bg-white/10"
-                    : "text-black hover:bg-black/10"
+              className={`font-medium px-4 py-2 text-sm group transition-colors duration-300 ${
+                darkMode ? "text-white" : "text-black"
               }`}
             >
-              Projects
+              <span className="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-current after:transition-transform after:duration-300 group-hover:after:origin-bottom-left group-hover:after:scale-x-100">
+                Projects
+              </span>
             </button>
             <button
-              onClick={() => scrollToSection("education")}
-              className={`font-medium transition-all duration-300 hover:scale-105 px-4 py-2 rounded-full text-sm ${
-                scrolled
-                  ? darkMode
-                    ? "text-white hover:bg-white/10"
-                    : "text-black hover:bg-black/10"
-                  : darkMode
-                    ? "text-white hover:bg-white/10"
-                    : "text-black hover:bg-black/10"
+              onClick={() => scrollToSection("skills")}
+              className={`font-medium px-4 py-2 text-sm group transition-colors duration-300 ${
+                darkMode ? "text-white" : "text-black"
               }`}
             >
-              Education
+              <span className="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-current after:transition-transform after:duration-300 group-hover:after:origin-bottom-left group-hover:after:scale-x-100">
+                Skills
+              </span>
+            </button>
+
+            <button
+              onClick={() => scrollToSection("education")}
+              className={`font-medium px-4 py-2 text-sm group transition-colors duration-300 ${
+                darkMode ? "text-white" : "text-black"
+              }`}
+            >
+              <span className="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-current after:transition-transform after:duration-300 group-hover:after:origin-bottom-left group-hover:after:scale-x-100">
+                Education
+              </span>
+            </button>
+            <button
+              onClick={() => scrollToSection("podcast")}
+              className={`font-medium px-4 py-2 text-sm group transition-colors duration-300 ${
+                darkMode ? "text-white" : "text-black"
+              }`}
+            >
+              <span className="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-current after:transition-transform after:duration-300 group-hover:after:origin-bottom-left group-hover:after:scale-x-100">
+                Podcast
+              </span>
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className={`font-medium transition-all duration-300 hover:scale-105 px-4 py-2 rounded-full text-sm ${
-                scrolled
-                  ? darkMode
-                    ? "text-white hover:bg-white/10"
-                    : "text-black hover:bg-black/10"
-                  : darkMode
-                    ? "text-white hover:bg-white/10"
-                    : "text-black hover:bg-black/10"
+              className={`font-medium px-4 py-2 text-sm group transition-colors duration-300 ${
+                darkMode ? "text-white" : "text-black"
               }`}
             >
-              Contact
+              <span className="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-current after:transition-transform after:duration-300 group-hover:after:origin-bottom-left group-hover:after:scale-x-100">
+                Contact
+              </span>
             </button>
           </div>
 
           {/* Desktop Resume and Theme buttons */}
-          <div className="hidden md:flex flex-row gap-2 sm:gap-4 md:gap-6 items-center">
+          <div className="hidden lg:flex flex-row gap-2 sm:gap-4 md:gap-6 items-center">
             <a
               href="/MuhammedGumus-FrontendDeveloper-Resume.pdf"
               target="_blank"
@@ -250,7 +255,7 @@ export default function Navbar() {
 
           {/* Mobile hamburger button */}
           <button
-            className="md:hidden p-2 rounded-full transition-all duration-300 hover:scale-110"
+            className="lg:hidden p-2 rounded-full transition-all duration-300 hover:scale-110"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             <div className="relative w-6 h-6">
@@ -285,9 +290,9 @@ export default function Navbar() {
         <div
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 z-40 bg-white dark:bg-black md:hidden"
+          className="fixed inset-0 z-40 bg-white dark:bg-black lg:hidden"
         >
-          <div className="flex flex-col md:h-full h-90">
+          <div className="flex flex-col lg:h-full h-90">
             {/* Header with logo and close button */}
             <div className="flex justify-between items-center px-6 py-4 border-b border-gray-200 dark:border-gray-700">
               <Link href="/" onClick={() => setMobileMenuOpen(false)}>
@@ -345,6 +350,16 @@ export default function Navbar() {
                   Projects
                 </button>
                 <button
+                  onClick={() => scrollToSection("skills")}
+                  className={`block w-full text-left text-lg font-medium py-4 px-4 rounded-xl transition-all duration-200 ${
+                    darkMode
+                      ? "text-gray-300 hover:text-white hover:bg-gray-800/50"
+                      : "text-gray-700 hover:text-black hover:bg-gray-100/80"
+                  }`}
+                >
+                  Skills
+                </button>
+                <button
                   onClick={() => scrollToSection("education")}
                   className={`block w-full text-left text-lg font-medium py-4 px-4 rounded-xl transition-all duration-200 ${
                     darkMode
@@ -353,6 +368,16 @@ export default function Navbar() {
                   }`}
                 >
                   Education
+                </button>
+                <button
+                  onClick={() => scrollToSection("podcast")}
+                  className={`block w-full text-left text-lg font-medium py-4 px-4 rounded-xl transition-all duration-200 ${
+                    darkMode
+                      ? "text-gray-300 hover:text-white hover:bg-gray-800/50"
+                      : "text-gray-700 hover:text-black hover:bg-gray-100/80"
+                  }`}
+                >
+                  Podcast
                 </button>
                 <button
                   onClick={() => scrollToSection("contact")}

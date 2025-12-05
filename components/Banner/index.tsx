@@ -28,12 +28,12 @@ export default function Home() {
   };
 
   return (
-    <div className="flex w-full items-center justify-center mt-10 sm:mt-16 md:mt-20 bg-white dark:bg-black text-black dark:text-white px-8 md:px-16 min-h-[80vh] py-16">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-24 w-full max-w-7xl relative">
+    <div className="flex w-full items-center justify-center mt-10 sm:mt-16 md:mt-24 lg:mt-20 bg-white dark:bg-black text-black dark:text-white px-8 md:px-12 lg:px-16 min-h-[80vh] py-16">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-16 md:gap-20 lg:gap-24 w-full max-w-7xl relative">
         {/* Profile Image Section */}
 
         {/* Left Content Section */}
-        <div className="text-center md:text-left flex-1 order-2 md:order-1 mt-6 md:mt-0">
+        <div className="text-center lg:text-left flex-1 order-2 lg:order-1 mt-6 md:mt-12 lg:mt-0">
           <h1 className="text-lg md:text-xl mb-2 text-gray-600 dark:text-gray-400 font-light tracking-wide">
             Hey, I'm
           </h1>
@@ -53,7 +53,7 @@ export default function Home() {
             and is passionate about product development.
           </p>
 
-          <div className="flex items-center justify-center md:justify-start">
+          <div className="flex items-center justify-center lg:justify-start">
             <Link href={"mailto:mgumus4102@gmail.com"}>
               <button
                 className={`
@@ -91,7 +91,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="relative group order-1 md:order-2 flex items-center justify-center min-w-[280px] sm:min-w-[320px] md:min-w-[400px] md:min-h-[400px]">
+        <div className="relative group order-1 lg:order-2 flex items-center justify-center min-w-[280px] sm:min-w-[320px] md:min-w-[450px] lg:min-w-[400px] md:min-h-[400px]">
           {/* Decorative dotted circle - centered around the image */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[240px] sm:h-[240px] md:w-[350px] md:h-[350px] border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-full opacity-20"></div>
 
@@ -110,7 +110,7 @@ export default function Home() {
           {/* Decorative small dots - better positioned */}
 
           {/* Experience badge - positioned at bottom left corner */}
-          <div className="absolute -bottom-4 left-0 sm:bottom-0 sm:-left-5 md:bottom-0 md:-left-5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg sm:rounded-xl px-2 py-1 sm:px-4 sm:py-3 shadow-xl z-20 transform sm:-translate-x-1/2 sm:translate-y-1/2">
+          <div className="absolute -bottom-4 left-0 sm:bottom-0 sm:-left-5 md:bottom-2 md:left-4 lg:bottom-0 lg:-left-5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg sm:rounded-xl px-2 py-1 sm:px-4 sm:py-3 shadow-xl z-20 transform sm:-translate-x-1/2 sm:translate-y-1/2">
             <div className="text-center flex items-center gap-1 sm:gap-2">
               <div className="text-lg sm:text-2xl font-bold text-black dark:text-white mb-0 sm:mb-1">
                 3+
@@ -122,7 +122,7 @@ export default function Home() {
           </div>
 
           {/* Status indicator - positioned at top right corner */}
-          <div className="absolute top-20 -right-4 sm:top-20 sm:right-5 md:top-20 md:right-5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg sm:rounded-xl px-2 py-1 sm:px-4 sm:py-2 shadow-xl z-20 transform sm:translate-x-1/2 sm:-translate-y-1/2">
+          <div className="absolute top-20 -right-4 sm:top-20 sm:right-5 md:top-24 md:right-10 lg:top-20 lg:right-5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg sm:rounded-xl px-2 py-1 sm:px-4 sm:py-2 shadow-xl z-20 transform sm:translate-x-1/2 sm:-translate-y-1/2">
             <div className="flex items-center gap-1 sm:gap-2">
               <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-500 rounded-full animate-pulse"></div>
               <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium whitespace-nowrap">
@@ -132,7 +132,7 @@ export default function Home() {
           </div>
 
           {/* Floating description - positioned at top left corner */}
-          <div className="absolute -top-10 -left-6 sm:top-5 sm:-left-10 md:top-5 md:-left-10 z-20 transform sm:-translate-x-1/2 sm:-translate-y-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
+          <div className="absolute -top-10 -left-6 sm:top-5 sm:-left-10 md:top-8 md:left-0 lg:top-5 lg:-left-10 z-20 transform sm:-translate-x-1/2 sm:-translate-y-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
             <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg sm:rounded-xl px-2 py-2 sm:px-4 sm:py-3 shadow-xl max-w-40 sm:max-w-60">
               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 italic leading-relaxed text-center">
                 <span className="hidden sm:inline">
