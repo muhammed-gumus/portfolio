@@ -42,22 +42,6 @@ const projects: Project[] = [
     externalLink: "",
   },
   {
-    name: "Nomad Work App",
-    description:
-      "NomadWork is a platform for remote workers and digital nomads to easily find the perfect workspace. Users can explore a wide range of locations, filter by various criteria, and access insights from others.",
-    image: "/image/nomadworkapp.png",
-    technologies: [
-      "TypeScript",
-      "Next.js",
-      "TailwindCSS",
-      "Go",
-      "React Native",
-      "GlueStack UI",
-    ],
-    githubLink: "https://github.com/nomadworkapp",
-    externalLink: "",
-  },
-  {
     name: "EnWord",
     description:
       "EnWord is a user-friendly app that helps users enhance their English vocabulary daily by providing 10 random words with Turkish translations and example sentences for context.",
@@ -132,25 +116,6 @@ const projects: Project[] = [
     ],
     githubLink: "https://github.com/senchabot-opensource/monorepo/tree/dev",
     externalLink: "https://senchabot.app/",
-  },
-
-  {
-    name: "Silver Host",
-    description:
-      "I created a sleek and modern website design using HTML and CSS, hosted at Silver Host. The website features a clean layout with intuitive navigation, showcasing my skills in front-end development. It demonstrates a strong focus on responsive design and user experience.",
-    image: "/image/host.png",
-    technologies: ["Html", "CSS"],
-    githubLink: "https://github.com/muhammed-gumus/Silver-Host",
-    externalLink: "https://silver-host.vercel.app/",
-  },
-  {
-    name: "Personal Portfolio",
-    description:
-      "The Personal Portfolio website is a comprehensive showcase of my work as a developer. It features sections for my biography, skills, projects, and contact information. The design is modern and responsive, ensuring a great user experience on all devices.",
-    image: "/image/portfolio.png",
-    technologies: ["Next.js", "JavaScript", "CSS", "React.js"],
-    githubLink: "https://github.com/muhammed-gumus/Personal-Portfolio",
-    externalLink: "https://personal-portfolio-muhammed-gumus.vercel.app/",
   },
 ];
 
