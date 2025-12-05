@@ -3,6 +3,9 @@ import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import ProjectsCarousel from "@/components/ProjectsCarousel";
+import Skills from "@/components/Skills";
+import Podcast from "@/components/Podcast";
 
 export default function Home() {
   return (
@@ -10,9 +13,15 @@ export default function Home() {
       <Banner />
       <Experience />
       {/* <hr className="border-gray-700 my-6 w-full" /> */}
-      <Projects />
+      {/* <Projects /> */}
+      <ProjectsCarousel />
+       {/* <hr className="border-gray-700 my-6 w-full" /> */}
+      <Skills />
       {/* <hr className="border-gray-700 my-6 w-full" /> */}
       <Education />
+     
+      {/* <hr className="border-gray-700 my-6 w-full" /> */}
+      <Podcast />
       {/* <hr className="border-gray-700 my-6 w-full" /> */}
       <Contact />
     </main>

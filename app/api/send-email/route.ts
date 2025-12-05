@@ -1,20 +1,51 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
+import { rateLimiter } from "@/lib/rate-limit";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: NextRequest) {
+  // 1. Rate Limiting Check (Limits to 3 requests per hour per IP)
+  const ip = req.headers.get("x-forwarded-for") || "unknown";
+  
+  // Rate Limit: 3 requests per 60 minutes
+  const isAllowed = rateLimiter(req, { limit: 3, window: 60 * 60 * 1000 });
+  
+  if (!isAllowed) {
+    console.warn("[API] Rate limit exceeded for IP:", ip);
+    return NextResponse.json(
+      { error: "Too many requests. Please try again later." },
+      { status: 429 }
+    );
+  }
+
   try {
     const body = await req.text();
     console.log("[API] Raw request body:", body);
-    let name, email, message;
+    let name, email, message, honey;
     try {
-      ({ name, email, message } = JSON.parse(body));
+      ({ name, email, message, honey } = JSON.parse(body));
     } catch (parseError) {
       console.error("[API] JSON parse error:", parseError);
       return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
     }
 
+    // 2. Honeypot Check
+    // If 'honey' field is populated, it's a bot.
+    if (honey) {
+      console.warn("[API] Bot detected (honeypot filled):", { ip, honey });
+      // Return success to fool the bot, but don't send email
+      return NextResponse.json({ success: true });
+    }
+
+    // 3. Simple manual Rate Limiter (since we can't easily rely on global state in serverless without Redis)
+    // We will just proceed with basic validation for now. 
+    // Ideally we would check a DB or Redis here. 
+    // Given the constraints, we rely on the honeypot primarily.
+    // However, we can check basic headers or adding a timestamp token from client could help.
+    
+    // For now, let's stick to honeypot as it's very effective against generic spam bots.
+    
     if (!name || !email || !message) {
       console.warn("[API] Missing fields:", { name, email, message });
       return NextResponse.json(

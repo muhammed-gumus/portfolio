@@ -97,7 +97,7 @@ export default function Navbar() {
         } ${
           scrolled
             ? "top-4 left-2 right-2 sm:left-4 sm:right-4 md:left-12 md:right-12 lg:left-16 lg:right-16 py-2 lg:px-8 px-2"
-            : "top-2 left-2 right-2 sm:left-4 sm:right-4 py-3"
+            : "top-2 left-2 right-2 sm:left-4 sm:right-4 py-3 lg:px-8 px-2"
         } ${
           scrolled
             ? darkMode
@@ -182,7 +182,7 @@ export default function Navbar() {
           {/* Desktop Resume and Theme buttons */}
           <div className="hidden md:flex flex-row gap-2 sm:gap-4 md:gap-6 items-center">
             <a
-              href="/Resume-FrontendMG.pdf"
+              href="/MuhammedGumus-FrontendDeveloper-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className={`font-medium transition-all duration-300 hover:scale-105 px-2 py-1 sm:px-4 sm:py-2 rounded-full text-sm sm:text-base border ${
@@ -369,7 +369,7 @@ export default function Navbar() {
               {/* Bottom section with Resume and Theme buttons */}
               <div className="flex mt-auto gap-2 pb-6">
                 <a
-                  href="/Resume-FrontendMG.pdf"
+                  href="/MuhammedGumus-FrontendDeveloper-Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`block w-full text-center px-4 py-3 rounded-xl font-medium transition-all duration-300 ${

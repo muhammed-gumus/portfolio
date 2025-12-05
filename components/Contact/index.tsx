@@ -68,7 +68,7 @@ export const projects = [
 ];
 
 const Contact: React.FC = () => {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", message: "", honey: "" });
   const [status, setStatus] = useState("");
 
   const handleChange = (
@@ -89,8 +89,10 @@ const Contact: React.FC = () => {
       });
 
       const data = await res.json();
-      if (data.success) setStatus("Message sent!");
-      else setStatus("Failed to send message.");
+      if (data.success) {
+        setStatus("Message sent!");
+        setForm({ name: "", email: "", message: "", honey: "" });
+      } else setStatus("Failed to send message.");
     } catch (error) {
       setStatus("Error sending message.");
     }
@@ -135,6 +137,17 @@ const Contact: React.FC = () => {
                   className="w-full px-4 py-2 bg-white dark:bg-gray-100 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent text-gray-900 dark:text-black placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-200"
                   required
                 />
+              </div>
+
+              <div className="hidden">
+                 <input
+                  name="honey"
+                  type="text"
+                  value={form.honey}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                 />
               </div>
 
               <div className="space-y-2">
