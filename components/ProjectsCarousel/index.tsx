@@ -30,7 +30,7 @@ const projects: Project[] = [
       "TypeScript",
     ],
     githubLink: "",
-    externalLink: "https://aqua-break.vercel.app/",
+    externalLink: "https://aquabreak.life",
   },
   {
     name: "Algorithm with JS",
