@@ -6,6 +6,7 @@ import Projects from "@/components/Projects";
 import ProjectsCarousel from "@/components/ProjectsCarousel";
 import Skills from "@/components/Skills";
 import Podcast from "@/components/Podcast";
+import Instagram from "@/components/Instagram";
 
 export default function Home() {
   return (
@@ -15,12 +16,14 @@ export default function Home() {
       {/* <hr className="border-gray-700 my-6 w-full" /> */}
       {/* <Projects /> */}
       <ProjectsCarousel />
-       {/* <hr className="border-gray-700 my-6 w-full" /> */}
+      {/* <hr className="border-gray-700 my-6 w-full" /> */}
       <Skills />
       {/* <hr className="border-gray-700 my-6 w-full" /> */}
       <Education />
-     
+
       {/* <hr className="border-gray-700 my-6 w-full" /> */}
+      <Instagram />
+      <hr className="border-gray-200 dark:border-neutral-800 my-4 w-full" />
       <Podcast />
       {/* <hr className="border-gray-700 my-6 w-full" /> */}
       <Contact />

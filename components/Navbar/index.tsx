@@ -163,13 +163,13 @@ export default function Navbar() {
               </span>
             </button>
             <button
-              onClick={() => scrollToSection("podcast")}
+              onClick={() => scrollToSection("instagram")}
               className={`font-medium px-4 py-2 text-sm group transition-colors duration-300 ${
                 darkMode ? "text-white" : "text-black"
               }`}
             >
               <span className="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-current after:transition-transform after:duration-300 group-hover:after:origin-bottom-left group-hover:after:scale-x-100">
-                Podcast
+                Content
               </span>
             </button>
             <button
@@ -187,7 +187,7 @@ export default function Navbar() {
           {/* Desktop Resume and Theme buttons */}
           <div className="hidden lg:flex flex-row gap-2 sm:gap-4 md:gap-6 items-center">
             <a
-              href="/MuhammedGumus-FrontendDeveloper-Resume.pdf"
+              href="/MuhammedGumus-FrontendEngineer-Resume-EN.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className={`font-medium transition-all duration-300 hover:scale-105 px-2 py-1 sm:px-4 sm:py-2 rounded-full text-sm sm:text-base border ${
@@ -370,14 +370,14 @@ export default function Navbar() {
                   Education
                 </button>
                 <button
-                  onClick={() => scrollToSection("podcast")}
+                  onClick={() => scrollToSection("instagram")}
                   className={`block w-full text-left text-lg font-medium py-4 px-4 rounded-xl transition-all duration-200 ${
                     darkMode
                       ? "text-gray-300 hover:text-white hover:bg-gray-800/50"
                       : "text-gray-700 hover:text-black hover:bg-gray-100/80"
                   }`}
                 >
-                  Podcast
+                  Content
                 </button>
                 <button
                   onClick={() => scrollToSection("contact")}
@@ -394,7 +394,7 @@ export default function Navbar() {
               {/* Bottom section with Resume and Theme buttons */}
               <div className="flex mt-auto gap-2 pb-6">
                 <a
-                  href="/MuhammedGumus-FrontendDeveloper-Resume.pdf"
+                  href="/MuhammedGumus-FrontendEngineer-Resume-EN.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`block w-full text-center px-4 py-3 rounded-xl font-medium transition-all duration-300 ${

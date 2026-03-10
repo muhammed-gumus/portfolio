@@ -33,12 +33,19 @@ const projects: Project[] = [
     externalLink: "https://aquabreak.life",
   },
   {
-    name: "Algorithm with JS",
+    name: "Algorithm with Mami",
     description:
-      "A comprehensive repository of JavaScript solutions to LeetCode Algorithm questions. Developed to master algorithmic thinking and interview preparation, featuring community-collaborated solutions and explanations.",
-    image: "/image/algorithm-js.png",
-    technologies: ["JavaScript", "Algorithms", "LeetCode", "Data Structures"],
-    githubLink: "https://github.com/muhammed-gumus/algorithm-with-js",
+      "A personal log of algorithm and data structure problems solved across LeetCode, HackerRank, and CodeWars. Features solutions in JavaScript, Python, C++ and SQL — documented with a focus on understanding patterns over memorizing solutions.",
+    image: "/image/algorithm-with-mami.png",
+    technologies: [
+      "JavaScript",
+      "Python",
+      "C++",
+      "LeetCode",
+      "HackerRank",
+      "CodeWars",
+    ],
+    githubLink: "https://github.com/muhammed-gumus/algorithm-with-mami",
     externalLink: "",
   },
   {
