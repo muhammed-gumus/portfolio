@@ -36,7 +36,7 @@ const projects: Project[] = [
     name: "Algorithm with Mami",
     description:
       "A personal log of algorithm and data structure problems solved across LeetCode, HackerRank, and CodeWars. Features solutions in JavaScript, Python, C++ and SQL — documented with a focus on understanding patterns over memorizing solutions.",
-    image: "/image/algorithm-with-mami.png",
+    image: "/algorithm-with-mami.png",
     technologies: [
       "JavaScript",
       "Python",
@@ -46,7 +46,7 @@ const projects: Project[] = [
       "CodeWars",
     ],
     githubLink: "https://github.com/muhammed-gumus/algorithm-with-mami",
-    externalLink: "",
+    externalLink: "https://algorithm-with-mami.vercel.app",
   },
   {
     name: "EnWord",
