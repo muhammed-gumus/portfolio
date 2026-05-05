@@ -187,7 +187,7 @@ export default function Navbar() {
           {/* Desktop Resume and Theme buttons */}
           <div className="hidden lg:flex flex-row gap-2 sm:gap-4 md:gap-6 items-center">
             <a
-              href="/MuhammedGumus-FrontendEngineer-Resume-EN.pdf"
+              href="/MuhammedGumus-FrontendEngineer-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className={`font-medium transition-all duration-300 hover:scale-105 px-2 py-1 sm:px-4 sm:py-2 rounded-full text-sm sm:text-base border ${
@@ -394,7 +394,7 @@ export default function Navbar() {
               {/* Bottom section with Resume and Theme buttons */}
               <div className="flex mt-auto gap-2 pb-6">
                 <a
-                  href="/MuhammedGumus-FrontendEngineer-Resume-EN.pdf"
+                  href="/MuhammedGumus-FrontendEngineer-Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`block w-full text-center px-4 py-3 rounded-xl font-medium transition-all duration-300 ${

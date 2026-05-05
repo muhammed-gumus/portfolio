@@ -36,7 +36,7 @@ export const trackResumeDownload = () => {
     label: "Resume PDF Download",
     value: 1,
     custom_parameters: {
-      file_name: "MuhammedGumus-FrontendEngineer-Resume-EN.pdf",
+      file_name: "MuhammedGumus-FrontendEngineer-Resume.pdf",
       file_extension: "pdf",
       link_text: "Resume",
       description: "Frontend Engineer Resume Download",

@@ -13,6 +13,21 @@ type Project = {
 
 const projects: Project[] = [
   {
+    name: "Carvix",
+    description:
+      "Carvix is an advanced AI-powered fuel tracking and savings platform. Users can instantly scan fuel receipts using AI, track real-time fuel prices across Turkey, and receive personalized savings recommendations. It also includes detailed vehicle/driver management and professional reporting.",
+    image: "/image/carvix.png",
+    technologies: [
+      "React Native",
+      "TypeScript",
+      "Expo",
+      "Next.js",
+      "TailwindCSS",
+    ],
+    githubLink: "",
+    externalLink: "https://carvix.app/",
+  },
+  {
     name: "Aqua Break",
     description:
       "Built a React Native app using Android Foreground Service + Kotlin to track app usage and trigger a full-screen overlay when user-defined limits are exceeded.",
