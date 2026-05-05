@@ -53,13 +53,6 @@ const Podcast: React.FC = () => {
               <span>Listen Episodes</span>
               <IconBrandSpotify className="w-5 h-5" />
             </Link>
-            <Link
-               href="https://www.socreate.app"
-               target="_blank"
-               className="text-neutral-600 dark:text-neutral-400 font-medium hover:text-black dark:hover:text-white transition-colors underline-offset-4 hover:underline"
-            >
-               Visit Website →
-            </Link>
           </div>
         </div>
       </div>
